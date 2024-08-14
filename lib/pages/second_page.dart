@@ -60,7 +60,7 @@ class _SecondPageState extends State<SecondPage> {
             child: Align(
               alignment: Alignment.bottomCenter,
               child: Padding(
-                padding: const EdgeInsets.all(22),
+                padding: const EdgeInsets.all(52),
                 child: ElevatedButton(
                   onPressed: () async {
                     final result = await Navigator.push(
@@ -75,7 +75,10 @@ class _SecondPageState extends State<SecondPage> {
                       });
                     }
                   },
-                  child: const Text('Choose a User'),
+                  child: const Text(
+                    'Choose a User',
+                    style: TextStyle(fontSize: 22),
+                  ),
                 ),
               ),
             ),
